@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo de la web -->
+    <title>Simon Blas CV</title>
+    <!-- Linkeamos al archivo de css (importacion del archivo css)-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icono de la pestaña -->
+    <link rel="shortcut icon" href="/Assets/Images/FAvicon.png" type="image/x-icon">
+    <!-- https://boxicons.com/ importamos los iconos de boxicons  -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- https://remixicon.com/ importamos los iconos de remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- https://fonts.google.com/ importamos fuentes de google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- barra de navegacion principal -->
+    <header>
+        <ul class="navlist">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre Mí</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">CV</a></li>
+        </ul>
+
+        <!-- boton de menu para celus -->
+        <input type="checkbox" name="checkbox" id="menu-toogle">
+        <label for="menu-toogle" class="menu-icon-action">
+            <div class="bx bx-menu" id="menuicon"></div>
+        </label>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero">
+
+
+        <div class="hero-img">
+            <img src="/Assets/Images/imagen cv.jpg" alt="Simón Blas foto">
+        </div>
+
+
+        <div class="hero-text">
+            <h1>Simón Blas</h1>
+            <h3>Estudiante de Certified Tech Developer, Digital House.</h3>
+            <h4>Habilidades en tecnologías:</h4>
+            <ul>
+                <li>HTML.</li>
+                <li>CSS.</li>
+                <li>Fundamentos de JavaScript.</li>
+                <li>Fundamentos de Ruby.</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- barra de navegacion de contacto -->
+    <nav class="container-redes">
+        <ul class="list-redes">
+            <!-- mail -->
+            <li><a href="mailto:simoblas08@gmail.com"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAcpJREFUSEvt1s+LTlEcx/HXyI8lJQvJj39Amo1kY8POj9KUFAs2UtOkbPxYIMRCEQs7JVNSUn7szGJ2lIWFLGVSspAFm2kQzlfn6rh55j7zuD3P5rmrc8/9ns/7ez/ne36MGNAzMiCuIbhvztetPoIT2NByBjM4j1uVbgnehumWgXW5zXgRnSX4FC7myHMtJ3Am653E5Tr4LKqAg5hsCX4Ad4ofCs5ff1yC49tNHMPXHhNYims4WowPJxvBEf8Su/B+gfA1eIzR2rhGcNgcFsXzCfvxtEv4DtzFyhxfav0THPP724Y8BRO4kgpuCX7k+Y/i+9khgSjU02lsiC9K7W84nhK4UYzpChz6W/AIqzJsCmP4XIMvx31sz/0fsBfP83uVbKPV5TJbjQc5idB5h514lUU34knaHNbl94DtxsciuZ7AMX4xrmI8i82lBA7nduxGy3L7erb3e82RnsGVzj7cLkBV/ywO4V6H+f9vcOhuSsvkIdZnyJu07Pbg9TxV3wo49FcgbI1qj+r/0rDUWgN3uaT/hA3BfT8W4+i9VG2N1UT04yKwFc/q4HiPIywO67ULrZ6G+LdpE7rQ6erTMmt+ueG9um92D8zqXxs3ZB/GykYiAAAAAElFTkSuQmCC" /></a>
+            </li>
+            <!-- whatsapp -->
+            <li><a href="http://wa.me/+5492281596217"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAxxJREFUSEvlllnITlEUhp8/U5nnzEMyRchYZiFTbpAklNkNFyhKSS4QSkIZL4TIEEmIkjkpkaIk8zzPMoX9am2dduf8+3xXf7Juvu+cs9d61/CutXYRJSRFJYTLPwdcE2gIlAYeAM+AX4Vkr5CIWwKTgPFA3QDkA3AOOOgc2gJ8izmRB7g+sBiYCH9L8xm4Y1G2DUAeA1OBw8WBx4CHAduBqsBzYC1wCLicMFrRgXQFegLzgPLm0ExgXRZ4ccCDgSOmuBxYCHyNpLCRpXqAnZvhyrIhTScLuDFwFagMzAZWxWoWfJ8LrHDO/gT6AGdD/SxgRaqIlwALTKks0B04lZPBO4ExFkD7PMBK03HgIdDMGKq6nQdkQKxW3WMiXly3DhgF7EsqpEW8HpgOzALW2GH9X23/FXHfGKp9H2LsFiGHx4DvASKJevWpHfbOeN16zrknOcGVuVpAdeCT1wkjLgd8AW4ArRKG5wAr7Vm1G5sTVMcuuO7o5oZLx2QbhsAag/dtCqkvvTQwZ1TracCmAoD3AiON3aezIlaKlepLblB0DoxrOCxztX9t7FZW8ohndw8j6B+dMOIKwEfgrSNTtRSr3vs3FrmeJWJ6KWBrSquJjL2BJhZUKrBe3nYGmhqwHEiKBoraqk2i3opIDqjP7xoX/KgsA7y0szWAH1mp1nvP4Ck2/sLAq1ibKco02eP6d7R98GN3mwtoQvJwWh9rSFyxtDR3k+t7BoCMDjSG17Ez2lr9gIv2rN8u9u5kDFjfz9i2GeSIdCzCIPVnOztz063ER/Z/PrDU1feEs9c/tJE1q1UXjTwRTEu+UNE+3mjjVv17LQ+wT7U2Si9TUJvpehNbi7oKaaksMr1xwI40r9Mi9ivtgGuTW65eQ4HWNiLFVpHvVWCskrt7TXatKF3dWNSSinpXVqrSgP1KTOooVbpzKSJd6l64PtYV550dEoE01ST7zQG1ZaaEwOq792Zcq1FRH7VoNejVEiOATo44muteVIbdwGbbv1FOhMC1HVgHt/ZE/eJuitJrASjF/nobBUseiF32CjJWyOH/D/g3btWaH4iaddwAAAAASUVORK5CYII=" /></a>
+            </li>
+            <!-- instagram -->
+            <li><a href="https://www.instagram.com/simo_blas/"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAwZJREFUSEvllknojlEUxn9/YxmKIvOQDFFmNmQIO0RSlIzFws4QJWRIFGKjLMxKWRgybSgZisyJSCxkSiky7Qzn0Xn1dt37vu9n81dufb313XvPc89znjPUUU+rrp5w+eeBOwA9gYYlDH0DngJvypgs8rg9sBWYCLQuMxTsvwfOAitSj0gBC+yoATd3g1+Au4A8KlpNgCFAUz/0GZgBnAsvxYCbAc8AebzfvruB2xVAM9uNgFHAev++BnqZ91/z4DFgXVjrHs+skWIdn22gsnsIuAiM9UesKwN+CXRyj9/WCCxQAWrN9/DcA14BnYuARa8U+dg87psA1aOmACOAH8A14ITfmwMc9HsLPFSfgBZAW+BdZjOkWsJQPK96fELsRWZkG9Ay2PgILAH2AfOc6geWETddLz2A/oD++7VCYInisqfCpMD4MgcVyE7gDtAYGOCg8krg2suv+w4qhsROFHgCcN6pm5a7PdhfL6qGeszyxrv6Q8SEWHuY21SMBzqDYrIQ+JjRMj13eYOl0xpgKbAjEfuVwBZgtTGxKXdGzOjho4ErKeDxwIWIx6cBUa+fKlJsiSE9OHy0NCMWlFaXUsDaVO6dMZFNzlk/6UqWmk/VCCyBDTPtjHPbUaozYBkXSLZUUFRYlpuityeAVznF+m7Onbnluhjjwi0EDj3u4rmtsjcoIq5uXixULvsEjaGSuEZ6DiuOYTottiKwy7xW4VfKyBM1BSlWaaQav9Aq1J6AESm8n2ljuN+Jeiz1SYWpAiLDojpWQKT4vZEwqOGogOiByukosOrpC6uzz4HuiViqZE61fBc7apPXrYgcT/TdBt6V1CYVLvWBKLAmjA9eWztWmSQSj8v+lpqlaoWnVb61xtqi6FKBPwLMKjFctq3yqzKsvi6bv1cMuA3wxMcdTQ4bgRvWo7+Xofh+NgjonsKhMah3vjPpXGr0mWsxPpAD+tvRRybUKg+Hjy4a9lRbpVRVMImkliV2VAuUAaL7j1Vlrm5XMBSkHvMIKJxeqgDX4mnls/8f8E/8tqAfEQrEDwAAAABJRU5ErkJggg==" /></a>
+            </li>
+            <!-- linkedin -->
+            <li><a href="https://www.linkedin.com/in/simon-b-621bb526b/"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAX1JREFUSEvt1rFLVlEYx/HPCw4hNBi0CA0pLo4F1lCSglNjmyAIDYUhOCQJEYmDhA42hPYHCG21uEiJUVuQtDVoTdaogg61iPfIDS4PqSDn5RX1bPd3zn2+5/ec5zz31jRo1BrEdeLAg7iMJazUIyv/c/wZtyqwAcznhkfwA7wOkO/orDf4eQEYD5AdXKw3+DY+Bcgb9NcbnOI/xBha8Q73kVxnHSfuOh3X3SV04BfWDwsSHV/Fz/DCLB6V2mNMh/kWdCMV5rXK3DYWkW7KRtxEDvAIXh7ibg1d2KyuyQH+gwtHnM1TTOYGp3i7+IHfZdqjodR2r+cGJ8epxX4tA9/BezRVQGljzfj7T8uR6lcYDqlewN2gpWpP570/coDv4W2AzCAVXXXcwJec4L4i1R8C5BkmgtaDjweB28oiqb4zh6FSGC3OaioE7MVy0J4Ulf7iHHye6moNnL3iSs3+ZrgG6du6WmpX0B7mvxXNYitoR647NX8gwfjBjw1zvAfOjXIfeRRb7AAAAABJRU5ErkJggg==" /></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- este es el logo abajo a la derecha -->
+    <footer class="pie">
+        <h2 class="logo">Simón Blas</h2>
+    </footer>
+
+</body>
+
+</html>
