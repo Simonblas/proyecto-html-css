@@ -322,5 +322,10 @@ section {
     .container-redes {
         position: absolute;
         bottom: -280px;
+        left: 20vw;
+    }
+
+    nav.container-redes {
+        width: 60vw;
     }
 }
