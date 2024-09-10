@@ -51,7 +51,7 @@ header {
 }
 
 body {
-    background-color: rgb(63, 56, 56);
+    background: linear-gradient(245deg, #000a23 0%, #02152b 25%, #021d34 45%, #02253d 65%, #012e46 90%);
 }
 
 .pie {
@@ -80,7 +80,7 @@ body {
 .container-redes {
     background: linear-gradient(90deg, #48cae4 0%, #0077b6 75%, #034ba9 100%);
     border-radius: 10px;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 30vw;
     z-index: 10;
@@ -106,19 +106,8 @@ body {
     border-bottom: 3px solid rgb(23, 21, 21);
 }
 
-#menu-toogle {
-    /* esto nunca queremos que se vea, ya que solo es un checkbox para el menu icon, este es el display del input */
-    display: none;
-}
-
 #menuicon {
     /* va sin display porque solamente queremos que se vea cuando el viewport width sea de celulares, es el display del icono de menu */
-    display: none;
-}
-
-
-.menu-icon-action {
-    /* esto le saca el display al label para que no se le pueda hacer click a nada (es para estar seguros), es el display del label */
     display: none;
 }
 
@@ -126,7 +115,6 @@ body {
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(245deg, #000a23 0%, #02152b 25%, #021d34 45%, #02253d 65%, #012e46 90%);
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -152,7 +140,7 @@ section {
 }
 
 .hero-text h1 {
-    font-size: 58px;
+    font-size: 61px;
     margin-bottom: 20px;
     font-family: "Roboto Mono", monospace;
     font-style: italic;
@@ -160,17 +148,17 @@ section {
 }
 
 .hero-text h3 {
-    font-size: 22px;
+    font-size: 25px;
     margin-bottom: 35px;
 }
 
 .hero-text h4 {
-    font-size: 18px;
+    font-size: 21px;
     margin-bottom: 10px;
 }
 
 .hero-text ul li {
-    font-size: 16px;
+    font-size: 19px;
     margin-bottom: 3px;
     list-style: disc;
 }
@@ -179,18 +167,18 @@ section {
 
     .hero-text h3 {
         transition: .5s;
-        font-size: 20px;
+        font-size: 23px;
     }
 
 
     .hero-text h4 {
         transition: .5s;
-        font-size: 14px;
+        font-size: 17px;
     }
 
     .hero-text ul li {
         transition: .5s;
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .hero-img img {
@@ -208,17 +196,17 @@ section {
 
     .hero-text h3 {
         transition: .5s;
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .hero-text h4 {
         transition: .5s;
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .hero-text ul li {
         transition: .5s;
-        font-size: 10px;
+        font-size: 14px;
     }
 
 }
@@ -232,10 +220,21 @@ section {
 
 @media (max-width: 768px) {
 
-    .menu-icon-action {
-        display: block;
+    .hero-text h1 {
+        font-size: 43px;
     }
 
+    .hero-text h3 {
+        font-size: 21px;
+    }
+
+    .hero-text h4 {
+        font-size: 19px;
+    }
+
+    .hero-text ul li {
+        font-size: 17px;
+    }
 
     #menuicon {
         display: block;
@@ -274,7 +273,7 @@ section {
     .logo {
         border-bottom: none;
         animation-name: celu;
-        animation-duration: ininite;
+        /* animation-duration: indinite; */
     }
 
     .logo:hover {
@@ -294,12 +293,16 @@ section {
         width: 200px;
         height: 300px;
         background: linear-gradient(90deg, #48cae4 0%, #0077b6 75%, #034ba9 100%);
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         border-radius: 10px;
-        transition: all .5s linear;
+        /* transition: all .5s linear; */
+    }
+
+    .navlist.open {
+        display: flex;
     }
 
     .navlist a {
@@ -320,12 +323,10 @@ section {
     }
 
     .container-redes {
-        position: absolute;
-        bottom: -280px;
+        position: relative;
+        bottom: 0px;
         left: 20vw;
-    }
-
-    nav.container-redes {
         width: 60vw;
     }
+
 }
